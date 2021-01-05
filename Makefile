@@ -8,8 +8,8 @@
 #DEVICE = attiny85
 #DEVICE = attiny84
 #DEVICE = attiny2313
-DEVICE = atmega328
-CPU_SPEED = 16000000
+DEVICE = attiny13
+CPU_SPEED = 9600000
 #CPU_SPEED = 8000000
 # calculate picoboot bootloader address
 ADDRESS:=$(shell echo $(DEVICE)|cut -c7| awk '{ printf("0x%x", $$1 * 1024 -66) }')
